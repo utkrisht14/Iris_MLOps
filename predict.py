@@ -8,11 +8,11 @@ FEATURE_COLS = ["SepalLengthCm", "SepalWidthCm", "PetalLengthCm", "PetalWidthCm"
 
 class IrisPredictor:
     def __init__(self, artifacts_dir: str = "artifacts"):
-        model_path = os.path.join(artifacts_dir, "model.pt")
+        model_path = os.path.join(artifacts_dir, "model.pth")
         scaler_path = os.path.join(artifacts_dir, "scaler.pkl")
         le_path = os.path.join(artifacts_dir, "label_encoder.pkl")
 
-        if not (os.path.exists(model_path) and os.path.exists(scaler_path) and os.paths.exists(le_path)):
+        if not (os.path.exists(model_path) and os.path.exists(scaler_path) and os.path.exists(le_path)):
             raise FileNotFoundError(
                 f"Artifacts not found in '{artifacts_dir}'. "
                 f"Expected model.pt, scaler.pkl, label_encoder.pkl"
