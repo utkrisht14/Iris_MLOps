@@ -1,10 +1,7 @@
-Got it 👍
-Below is **everything written inside ONE single `.md` file**, clean and professional.
-You can **copy–paste this entire block into `README.md`** directly.
-
----
 
 ```md
+````
+
 # Iris Flower Prediction Web Application (PyTorch + Flask + Cloud Run)
 
 This project is a complete end-to-end Machine Learning web application built using **PyTorch** and **Flask**, containerized with **Docker**, and deployed on **Google Cloud Run** using **source-based deployment**.
@@ -26,8 +23,7 @@ The application allows users to enter Iris flower measurements through a simple 
 
 ## 🧱 Project Structure
 
-
-
+````
 iris-project-flask/
 ├── app.py                  # Flask application
 ├── model.py                # PyTorch model definition
